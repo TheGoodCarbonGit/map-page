@@ -1,0 +1,54 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [174.76792012621496,-41.29012931030752]
+        },
+        "properties": {
+          "name": "Victoria University",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "category": "Education"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [174.76743777594675,-41.29121173059227]
+        },
+        "properties": {
+          "name": "NZ School of Music",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "category": "Education"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [174.76908663856474,-41.29006097332781]
+        },
+        "properties": {
+          "name": "Victoria Recreation Centre",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "category": "Recreation"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [174.7682533568849,-41.28882756472418]
+        },
+        "properties": {
+          "name": "The LAB Cafe",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "category": "Food"
+        }
+      }
+    ]
+  }
+  
