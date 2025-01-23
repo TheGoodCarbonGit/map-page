@@ -3,3 +3,20 @@
     height: 400px; 
 }
 
+#header-bar, .search-container, .filter-buttons {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.filter-buttons {
+    gap: 10px;
+}
+
+#header-bar {
+    justify-content: space-between;
+}
+
+#plugin {
+    width: 820px; 
+}

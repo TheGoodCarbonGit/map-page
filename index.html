@@ -15,6 +15,17 @@
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
 
+    <!-- FontAwesome Import -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+
+    <!-- Bootstrap Import -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+
+    <!-- Beautify Markers Imports -->
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+
     <!-- Sidebar Imports -->
     <script src=" https://cdn.jsdelivr.net/npm/leaflet-sidebar@0.2.4/src/L.Control.Sidebar.min.js "></script>
     <link href=" https://cdn.jsdelivr.net/npm/leaflet-sidebar@0.2.4/src/L.Control.Sidebar.min.css " rel="stylesheet">
@@ -23,33 +34,69 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.Default.css" />
     <script src="https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster.js"></script>
 
-    <!-- Search Imports-->
+    <!-- Search Imports -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet.pinsearch/src/Leaflet.PinSearch.css" crossorigin=""></script>
     <script src="https://unpkg.com/leaflet.pinsearch/src/Leaflet.PinSearch.js" crossorigin=""></script>
+
+    <!-- Leaflet Easy Button-->
+    <script src=" https://cdn.jsdelivr.net/npm/leaflet-easybutton@2.4.0/src/easy-button.min.js "></script>
+    <link href=" https://cdn.jsdelivr.net/npm/leaflet-easybutton@2.4.0/src/easy-button.min.css " rel="stylesheet">
+
+    <!-- Filter Button Import -->
+    <script src=" https://cdn.jsdelivr.net/npm/leaflet-tag-filter-button@0.0.5/src/leaflet-tag-filter-button.min.js "></script>
+    <link href=" https://cdn.jsdelivr.net/npm/leaflet-tag-filter-button@0.0.5/src/leaflet-tag-filter-button.min.css " rel="stylesheet">
 </head>
 
 <body>
     <main>
-        <div> 
-            <h1>Map</h1>  
-            <p>Features added</p>
-            <ul>
-                <li>Markers</li>
-                <li>Sidebar (currently only for 1 marker)</li>
-                <li>Street map/Satellite Toggling</li>
-            </ul>
+        <h1>Map</h1>  
+        <p>Implemented</p>
+        <ul>
+            <li>Markers</li>
+            <li>Sidebar (currently only information for 1 marker)</li>
+            <li>Marker clustering</li>
+            <li>Pin searching</li>
+            <li>Categorise and colour code markers</li>
+            <li>Filter</li>
+        </ul>
+        <p>To do</p>
+        <ul>
+            <li>Sidebar list (manual toggle)</li>
+            <li>Search title and region</li>
+            <li>Search nearest to user location</li>
+        </ul>
+        <div id="plugin"> 
+            <div id="header-bar">
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search...">
+                    <button id="search-btn">Search</button>
+                </div>
+                <div class="filter-buttons">
+                    <label>
+                        <input type="checkbox">
+                        Good Friend
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Project
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Carbon Farmer
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Donor/Grants
+                    </label>
+                </div>
+            </div>
             <div class="map" id="map"></div>
             <div id="sidebar"></div>
         </div>
         <div> 
-            <h1>Map with popup</h1>  
+            <h1>Map, no clustering, toggle satellite</h1>  
             <div class="map" id="map2"></div>
             <div id="sidebar2"></div>
-        </div>
-        <div> 
-            <h1>Map without clustering</h1>  
-            <div class="map" id="map3"></div>
-            <div id="sidebar3"></div>
         </div>
     </main>
 

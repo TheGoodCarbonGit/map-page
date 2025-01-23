@@ -10,7 +10,7 @@
         "properties": {
           "name": "Victoria University",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Education"
+          "category": "Good Friend"
         }
       },
       {
@@ -22,7 +22,7 @@
         "properties": {
           "name": "NZ School of Music",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Education"
+          "category": "Good Friend"
         }
       },
       {
@@ -34,7 +34,7 @@
         "properties": {
           "name": "Victoria Recreation Centre",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Recreation"
+          "category": "Project"
         }
       },
       {
@@ -46,7 +46,31 @@
         "properties": {
           "name": "The LAB Cafe",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Food"
+          "category": "Carbon Farmer"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [174.76919712672313, -41.28875465702448]
+        },
+        "properties": {
+          "name": "VUWSA",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "category": "Donor/Grants"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [174.76870317822605, -41.29088640807932]
+        },
+        "properties": {
+          "name": "Malaghan Institute of Medical Research",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "category": "Donor/Grants"
         }
       }
     ]
