@@ -1,5 +1,6 @@
 // Initialise the map
 var map1 = L.map('map').setView([-41.29012931030752, 174.76792012621496], 5);
+var markerMap = {};
 
 // Add the tiles (image of the maps)
 var lyr_streets = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -23,7 +24,6 @@ fetch('random.json')
 
     // inistialise lists of markers for clusters
     var markers = L.markerClusterGroup();
-    var markerMap = {};
 
     // Parsing through each individual entry and extract info
     data.features.forEach(function(feature) {
@@ -100,29 +100,39 @@ fetch('random.json')
 
     map1.addLayer(markers);
 
-    // Add search bar
-    var searchBar = L.control.pinSearch({
-      position: 'topright',
-      placeholder: 'Search...',
-      buttonText: 'Search',
-      onSearch: function(query) {
-        console.log('Search query:', query);
-        var lowerQuery = query.toLowerCase();
-
-        if (markerMap[lowerQuery]) {
-          showSidebar1(markerMap[lowerQuery]);
-        }
-      },
-      searchBarWidth: '200px',
-      searchBarHeight: '30px',
-      maxSearchResults: 3
-    }).addTo(map1);
   })
   .catch(error => console.error('Error loading GeoJSON:', error));
 
 function showSidebar1(properties) {
     sidebar1.setContent('<h4><em>' + properties.category + '</em></h4><h2>' + properties.name + '</h2><p>' + properties.description + '</p>');
     sidebar1.show();
+}
+
+function handleSearch() {
+  var query = document.getElementById('search-bar').value.toLowerCase();
+  var searchResultsContainer = document.getElementById('search-results');
+  
+  searchResultsContainer.innerHTML = '';
+
+  var matches = Object.keys(markerMap).filter(function(key) {
+      return key.includes(query);
+  });
+
+  if (matches.length > 0 && query != '') {
+    searchResultsContainer.style.display = 'block';
+    matches.forEach(function(match) {
+      var resultItem = document.createElement('div');
+      resultItem.className = 'search-result-item';
+      resultItem.textContent = match;
+      
+      resultItem.addEventListener('click', function() {
+        showSidebar1(markerMap[match]);
+      });
+      searchResultsContainer.appendChild(resultItem);
+    });
+  } else {
+    searchResultsContainer.style.display = 'none';
+  }
 }
 
 

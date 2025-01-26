@@ -20,3 +20,25 @@
 #plugin {
     width: 820px; 
 }
+
+
+.search-container {
+    position: relative;
+}
+
+#search-results {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+  }
+  
+  .search-results-item {
+    padding: 5px;
+    cursor: pointer;
+    z-index: 2;
+  }
