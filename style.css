@@ -42,3 +42,28 @@
     cursor: pointer;
     z-index: 2;
   }
+
+
+
+.leaflet-control-container {
+    display: flex !important;
+    flex-direction: row !important;
+    height: 100% !important;
+}
+.leaflet-sidebar {
+    padding: 0 !important;
+    width: 30% !important;
+    position: relative !important;
+}
+
+#sidebar {
+    padding: 20px;
+}
+
+.close {
+    text-decoration: none !important;
+}
+
+.leaflet-bottom {
+    display: none;
+}

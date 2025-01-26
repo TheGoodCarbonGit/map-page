@@ -1,6 +1,14 @@
 // Initialise the map
-var map1 = L.map('map').setView([-41.29012931030752, 174.76792012621496], 5);
+var map1 = L.map('map', {
+  zoomControl: false
+}).setView([-41.29012931030752, 174.76792012621496], 5);
 var markerMap = {};
+  // inistialise lists of markers for clusters
+var markers = L.markerClusterGroup();
+
+L.control.zoom({
+  position: 'topright'
+}).addTo(map1);
 
 // Add the tiles (image of the maps)
 var lyr_streets = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -21,9 +29,6 @@ var sidebar1 = L.control.sidebar('sidebar', {
 fetch('random.json')
   .then(response => response.json())
   .then(data => {
-
-    // inistialise lists of markers for clusters
-    var markers = L.markerClusterGroup();
 
     // Parsing through each individual entry and extract info
     data.features.forEach(function(feature) {
@@ -88,15 +93,13 @@ fetch('random.json')
       });
 
       markers.addLayer(marker);
-      markerMap[title.toLowerCase()] = feature.properties;
-    });
 
-    // Import filter button
-    L.control.tagFilterButton({
-        data: ['Good Friend', 'Project', 'Carbon Farmer', 'Donor/Grants', 'none'],
-        icon: '<i class="fa-solid fa-filter"></i>',
-        filterOnEveryClick: true
-        }).addTo( map1 );
+      markerMap[title] = {
+        marker: marker,
+        category: category,
+        properties: feature.properties
+      };
+    });
 
     map1.addLayer(markers);
 
@@ -104,7 +107,7 @@ fetch('random.json')
   .catch(error => console.error('Error loading GeoJSON:', error));
 
 function showSidebar1(properties) {
-    sidebar1.setContent('<h4><em>' + properties.category + '</em></h4><h2>' + properties.name + '</h2><p>' + properties.description + '</p>');
+    sidebar1.setContent('<h5><em>' + properties.category + '</em></h5><h4>' + properties.name + '</h4><p>' + properties.description + '</p>');
     sidebar1.show();
 }
 
@@ -115,7 +118,7 @@ function handleSearch() {
   searchResultsContainer.innerHTML = '';
 
   var matches = Object.keys(markerMap).filter(function(key) {
-      return key.includes(query);
+      return key.toLowerCase().includes(query);
   });
 
   if (matches.length > 0 && query != '') {
@@ -126,13 +129,30 @@ function handleSearch() {
       resultItem.textContent = match;
       
       resultItem.addEventListener('click', function() {
-        showSidebar1(markerMap[match]);
+        showSidebar1(markerMap[match].properties);
       });
       searchResultsContainer.appendChild(resultItem);
     });
   } else {
     searchResultsContainer.style.display = 'none';
   }
+}
+
+function updateMarkers() {
+  markers.clearLayers();
+
+  Object.keys(markerMap).forEach(function(title) {
+    var markerData = markerMap[title];
+    var marker = markerData.marker;
+    var category = markerData.category;
+
+    if (category === "Good Friend" && document.getElementById('good-friend').checked ||
+        category === "Project" && document.getElementById('project').checked ||
+        category === "Carbon Farmer" && document.getElementById('carbon-farmer').checked ||
+        category === "Donor/Grants" && document.getElementById('donor-grants').checked) {
+      markers.addLayer(marker);
+    }
+  });
 }
 
 

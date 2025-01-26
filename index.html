@@ -33,14 +33,6 @@
     <!-- Marker Imports -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.Default.css" />
     <script src="https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster.js"></script>
-
-    <!-- Leaflet Easy Button-->
-    <script src=" https://cdn.jsdelivr.net/npm/leaflet-easybutton@2.4.0/src/easy-button.min.js "></script>
-    <link href=" https://cdn.jsdelivr.net/npm/leaflet-easybutton@2.4.0/src/easy-button.min.css " rel="stylesheet">
-
-    <!-- Filter Button Import -->
-    <script src=" https://cdn.jsdelivr.net/npm/leaflet-tag-filter-button@0.0.5/src/leaflet-tag-filter-button.min.js "></script>
-    <link href=" https://cdn.jsdelivr.net/npm/leaflet-tag-filter-button@0.0.5/src/leaflet-tag-filter-button.min.css " rel="stylesheet">
 </head>
 
 <body>
@@ -69,19 +61,19 @@
                 </div>
                 <div class="filter-buttons">
                     <label>
-                        <input type="checkbox">
+                        <input type="checkbox" id="good-friend" onchange="updateMarkers()" checked>
                         Good Friend
                     </label>
                     <label>
-                        <input type="checkbox">
+                        <input type="checkbox" id="project" onchange="updateMarkers()" checked>
                         Project
                     </label>
                     <label>
-                        <input type="checkbox">
+                        <input type="checkbox" id="carbon-farmer" onchange="updateMarkers()" checked>
                         Carbon Farmer
                     </label>
                     <label>
-                        <input type="checkbox">
+                        <input type="checkbox" id="donor-grants" onchange="updateMarkers()" checked>
                         Donor/Grants
                     </label>
                 </div>
