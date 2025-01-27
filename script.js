@@ -1,6 +1,9 @@
 // Initialise the map
 var map1 = L.map('map', {
-  zoomControl: false
+  zoomControl: false,
+  scrollWheelZoom: false,
+  smoothWheelZoom: true,
+  smoothSensitivity: 3, 
 }).setView([-41.29012931030752, 174.76792012621496], 5);
 var markerMap = {};
   // inistialise lists of markers for clusters
