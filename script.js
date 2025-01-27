@@ -144,7 +144,7 @@ function handleSearch() {
         categoryElement.className = 'category';
         categoryElement.textContent = markerPoint.category;
 
-        var nameElement = document.createElement('h5');
+        var nameElement = document.createElement('h6');
         nameElement.className = 'name';
         nameElement.textContent = markerPoint.name;
 
