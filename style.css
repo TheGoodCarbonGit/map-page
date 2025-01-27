@@ -37,7 +37,6 @@
   }
   
   .search-result-item .description {
-    font-size: 0.9em;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;

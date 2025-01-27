@@ -140,15 +140,15 @@ function handleSearch() {
 
         var markerPoint = markerMap[match].properties;
 
-        var categoryElement = document.createElement('div');
+        var categoryElement = document.createElement('h6');
         categoryElement.className = 'category';
         categoryElement.textContent = markerPoint.category;
 
-        var nameElement = document.createElement('div');
+        var nameElement = document.createElement('h5');
         nameElement.className = 'name';
         nameElement.textContent = markerPoint.name;
 
-        var descriptionElement = document.createElement('div');
+        var descriptionElement = document.createElement('p');
         descriptionElement.className = 'description';
         descriptionElement.textContent = markerPoint.description;
 
