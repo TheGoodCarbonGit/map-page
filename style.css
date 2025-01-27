@@ -26,23 +26,27 @@
     position: relative;
 }
 
-#search-results {
-    display: none;
-    position: absolute;
-    top: 100%; 
-    padding: 5px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-  }
-  
-  .search-results-item {
-    padding: 5px;
-    cursor: pointer;
-    z-index: 2;
+
+
+.search-result-item .category {
+    font-size: 0.9em;
   }
 
+.search-result-item {
+    margin-bottom: 10px;
+    background-color: pink;
+  }
+  
+  .search-result-item .description {
+    font-size: 0.9em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  
 
 
 .leaflet-control-container {

@@ -113,30 +113,58 @@ function showSidebar1(properties) {
 
 function handleSearch() {
   var query = document.getElementById('search-bar').value.toLowerCase();
-  var searchResultsContainer = document.getElementById('search-results');
-  
-  searchResultsContainer.innerHTML = '';
 
-  var matches = Object.keys(markerMap).filter(function(key) {
+  var sidebarContent = sidebar1.getContainer();
+  sidebarContent.innerHTML = '';
+
+  if (query !== '') {
+    sidebar1.show();
+
+    var matches = Object.keys(markerMap).filter(function(key) {
       return key.toLowerCase().includes(query);
-  });
-
-  if (matches.length > 0 && query != '') {
-    searchResultsContainer.style.display = 'block';
-    matches.forEach(function(match) {
-      var resultItem = document.createElement('div');
-      resultItem.className = 'search-result-item';
-      resultItem.textContent = match;
-      
-      resultItem.addEventListener('click', function() {
-        showSidebar1(markerMap[match].properties);
-      });
-      searchResultsContainer.appendChild(resultItem);
     });
+
+    if (matches.length > 0) {
+      matches.forEach(function(match) {
+        var resultItem = document.createElement('div');
+        resultItem.className = 'search-result-item';
+
+        var markerPoint = markerMap[match].properties;
+
+        var categoryElement = document.createElement('div');
+        categoryElement.className = 'category';
+        categoryElement.textContent = markerPoint.category;
+
+        var nameElement = document.createElement('div');
+        nameElement.className = 'name';
+        nameElement.textContent = markerPoint.name;
+
+        var descriptionElement = document.createElement('div');
+        descriptionElement.className = 'description';
+        descriptionElement.textContent = markerPoint.description;
+
+        resultItem.appendChild(categoryElement);
+        resultItem.appendChild(nameElement);
+        resultItem.appendChild(descriptionElement);
+
+        resultItem.addEventListener('click', function() {
+          showSidebar1(markerMap[match].properties);
+        });
+
+        sidebarContent.appendChild(resultItem);
+      });
+    } else {
+      var noResultsItem = document.createElement('div');
+      noResultsItem.className = 'search-result-item';
+      noResultsItem.textContent = 'No results found';
+      sidebarContent.appendChild(noResultsItem);
+    }
   } else {
-    searchResultsContainer.style.display = 'none';
+    sidebar1.hide();
   }
 }
+
+
 
 function updateMarkers() {
   markers.clearLayers();
