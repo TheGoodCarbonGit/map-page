@@ -109,10 +109,16 @@ fetch('https://tong-jt.github.io/map-test/locations.json')
   })
   .catch(error => console.error('Error loading GeoJSON:', error));
 
-function showSidebar1(properties) {
+  function showSidebar1(properties) {
+    var marker = markerMap[properties.name].marker;
+    var latLng = marker.getLatLng();
+  
+    var offsetLatLng = L.latLng(latLng.lat, latLng.lng - 0.01);
+  
+    map1.setView(offsetLatLng, 14);
     sidebar1.setContent('<h5><em>' + properties.category + '</em></h5><h4>' + properties.name + '</h4><p>' + properties.description + '</p>');
     sidebar1.show();
-}
+  }
 
 function handleSearch() {
   var query = document.getElementById('search-bar').value.toLowerCase();
