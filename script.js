@@ -29,7 +29,7 @@ var sidebar1 = L.control.sidebar('sidebar', {
 }).addTo(map1);
 
 // Fetch the JSON from local file, parse through
-fetch('https://tong-jt.github.io/map-test/random.json')
+fetch('https://tong-jt.github.io/map-test/locations.json')
   .then(response => response.json())
   .then(data => {
 
