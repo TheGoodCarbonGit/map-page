@@ -5,6 +5,7 @@ var map1 = L.map('map', {
   smoothWheelZoom: true,
   smoothSensitivity: 3, 
 }).setView([-41.29012931030752, 174.76792012621496], 5);
+
 var markerMap = {};
   // inistialise lists of markers for clusters
   var markers = L.markerClusterGroup({
@@ -68,7 +69,7 @@ fetch('https://tong-jt.github.io/map-test/locations.json')
           textColor: 'white',
           backgroundColor: '#bf3938'
         };
-      } else if (category === "Donor/Grants") {
+      } else if (category === "Donor") {
         iconOptions = {
           icon: 'thumbs-up',
           iconShape: 'marker',
@@ -188,7 +189,7 @@ function updateMarkers() {
     if (category === "Good Friend" && document.getElementById('good-friend').checked ||
         category === "Project" && document.getElementById('project').checked ||
         category === "Carbon Farmer" && document.getElementById('carbon-farmer').checked ||
-        category === "Donor/Grants" && document.getElementById('donor-grants').checked) {
+        category === "Donor" && document.getElementById('donor-grants').checked) {
       markers.addLayer(marker);
     }
   });

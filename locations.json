@@ -228,7 +228,7 @@
       "properties": {
         "name": "Upper Hutt City Council",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "category": "Donor/Grants"
+        "category": "Donor"
       }
     },
     {
@@ -240,7 +240,7 @@
       "properties": {
         "name": "Simplicity Foundation",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "category": "Donor/Grants"
+        "category": "Donor"
       }
     },
     {
@@ -336,7 +336,7 @@
       "properties": {
         "name": "Mazda Foundation",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "category": "Donor/Grants"
+        "category": "Donor"
       }
     }
   ]
