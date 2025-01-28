@@ -7,7 +7,9 @@ var map1 = L.map('map', {
 }).setView([-41.29012931030752, 174.76792012621496], 5);
 var markerMap = {};
   // inistialise lists of markers for clusters
-var markers = L.markerClusterGroup();
+  var markers = L.markerClusterGroup({
+    showCoverageOnHover: false
+  });
 
 L.control.zoom({
   position: 'topright'
