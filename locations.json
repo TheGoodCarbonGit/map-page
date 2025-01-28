@@ -1,248 +1,344 @@
 {
-    "type": "FeatureCollection",
-    "features": [
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [175.0991339, -41.09363516]
-        },
-        "properties": {
-          "name": "Birchville Community Garden",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Project"
-        }
-      }
-      ,
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [175.0593073, -41.12026128]
-        },
-        "properties": {
-          "name": "Clyma Community Garden",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Project"
-        }
-      }
-      ,
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [175.0631667, -41.13278224]
-        },
-        "properties": {
-          "name": "Mahinga Kai Community Garden",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Project"
-        }
-      }
-      ,
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [175.0386096, -41.13619243]
-        },
-        "properties": {
-          "name": "Tawai Park Community Garden",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Project"
-        }
-      }
-      ,
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [175.0980639, -41.10405478]
-        },
-        "properties": {
-          "name": "Rimutaka Baptist Church Community Garden",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Project"
-        }
-      }
-      ,
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [174.7796093, -41.30611179]
-        },
-        "properties": {
-          "name": "KaiCycle",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Project"
-        }
-      }
-      ,
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [175.0377023, -41.12680984]
-        },
-        "properties": {
-          "name": "Fergusson Intermediate School",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Project"
-        }
-      }
-      ,
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [178.2971262, -38.37198794]
-        },
-        "properties": {
-          "name": "Tolaga Bay Inn Charitable Trust",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Carbon Farmer"
-        }
-      }
-      ,
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [169.1042446, -46.09648038]
-        },
-        "properties": {
-          "name": "Southland Carbon",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Carbon Farmer"
-        }
-      }
-      ,
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [170.3649342, -45.87985017]
-        },
-        "properties": {
-          "name": "NZ Biochar Limited",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Carbon Farmer"
-        }
-      }
-      ,
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [175.1120946, -41.05236229]
-        },
-        "properties": {
-          "name": "The Good Carbon Farm",
-          "description": "The Good Carbon Farm is a New Zealand based not-for-profit making climate impact tangible. We store carbon in community spaces by converting plant waste into biochar.",
-          "category": "Carbon Farmer"
-        }
-      }
-      ,
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [144.953634, -37.81654591]
-        },
-        "properties": {
-          "name": "HM.",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Good Friend"
-        }
-      }
-      ,
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [174.7762598, -41.3012596]
-        },
-        "properties": {
-          "name": "Massey University",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Good Friend"
-        }
-      }
-      ,
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [174.767909, -41.28987811]
-        },
-        "properties": {
-          "name": "Victoria University Wellington",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Good Friend"
-        }
-      }
-      ,
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [170.3649771, -45.87990993]
-        },
-        "properties": {
-          "name": "Biochar Network New Zealand",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Good Friend"
-        }
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [175.0991339, -41.09363516]
       },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [172.612685, -43.54150382]
-        },
-        "properties": {
-          "name": "Earth Sea Sky",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Good Friend"
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [175.2945333, -37.78110683]
-        },
-        "properties": {
-          "name": "EnviroSchools",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Good Friend"
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [175.0675975, -41.12599081]
-        },
-        "properties": {
-          "name": "Upper Hutt City Council",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Donor/Grants"
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [174.7717867, -36.79042034]
-        },
-        "properties": {
-          "name": "Simplicity Foundation",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "category": "Donor/Grants"
-        }
+      "properties": {
+        "name": "Birchville Community Garden",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Project"
       }
-    ]
-  }
+    }
+    ,
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [175.0593073, -41.12026128]
+      },
+      "properties": {
+        "name": "Clyma Community Garden",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Project"
+      }
+    }
+    ,
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [175.0631667, -41.13278224]
+      },
+      "properties": {
+        "name": "Mahinga Kai Community Garden",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Project"
+      }
+    }
+    ,
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [175.0386096, -41.13619243]
+      },
+      "properties": {
+        "name": "Tawai Park Community Garden",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Project"
+      }
+    }
+    ,
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [175.0980639, -41.10405478]
+      },
+      "properties": {
+        "name": "Rimutaka Baptist Church Community Garden",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Project"
+      }
+    }
+    ,
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [174.7796093, -41.30611179]
+      },
+      "properties": {
+        "name": "KaiCycle",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Project"
+      }
+    }
+    ,
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [175.0377023, -41.12680984]
+      },
+      "properties": {
+        "name": "Fergusson Intermediate School",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Project"
+      }
+    }
+    ,
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [178.2971262, -38.37198794]
+      },
+      "properties": {
+        "name": "Tolaga Bay Inn Charitable Trust",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Carbon Farmer"
+      }
+    }
+    ,
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [169.1042446, -46.09648038]
+      },
+      "properties": {
+        "name": "Southland Carbon",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Carbon Farmer"
+      }
+    }
+    ,
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [170.3649342, -45.87985017]
+      },
+      "properties": {
+        "name": "NZ Biochar Limited",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Carbon Farmer"
+      }
+    }
+    ,
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [175.1120946, -41.05236229]
+      },
+      "properties": {
+        "name": "The Good Carbon Farm",
+        "description": "The Good Carbon Farm is a New Zealand based not-for-profit making climate impact tangible. We store carbon in community spaces by converting plant waste into biochar.",
+        "category": "Carbon Farmer"
+      }
+    }
+    ,
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [144.953634, -37.81654591]
+      },
+      "properties": {
+        "name": "HM.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Good Friend"
+      }
+    }
+    ,
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [174.7762598, -41.3012596]
+      },
+      "properties": {
+        "name": "Massey University",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Good Friend"
+      }
+    }
+    ,
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [174.767909, -41.28987811]
+      },
+      "properties": {
+        "name": "Victoria University Wellington",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Good Friend"
+      }
+    }
+    ,
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [170.3649771, -45.87990993]
+      },
+      "properties": {
+        "name": "Biochar Network New Zealand",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Good Friend"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [172.612685, -43.54150382]
+      },
+      "properties": {
+        "name": "Earth Sea Sky",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Good Friend"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [175.2945333, -37.78110683]
+      },
+      "properties": {
+        "name": "EnviroSchools",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Good Friend"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [175.0675975, -41.12599081]
+      },
+      "properties": {
+        "name": "Upper Hutt City Council",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Donor/Grants"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [174.7717867, -36.79042034]
+      },
+      "properties": {
+        "name": "Simplicity Foundation",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Donor/Grants"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [174.8737292, -36.99152574]
+      },
+      "properties": {
+        "name": "Oke",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Project"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [174.7984312, -36.8247882]
+      },
+      "properties": {
+        "name": "Restoring Takarunga Hauraki",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Project"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [174.6189313, -36.83258067]
+      },
+      "properties": {
+        "name": "Robert Mignault",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Carbon Farmer"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [175.1237747, -41.00882376]
+      },
+      "properties": {
+        "name": "Gallops Ridge",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Carbon Farmer"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [175.0217453, -37.21001845]
+      },
+      "properties": {
+        "name": "Soilpro NZ",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Carbon Farmer"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [175.5272418, -39.71918211]
+      },
+      "properties": {
+        "name": "Slow Farm",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Carbon Farmer"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [175.0217453, -37.21001845]
+      },
+      "properties": {
+        "name": "Soilpro NZ",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Good Friend"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [174.7682371, -36.84679064]
+      },
+      "properties": {
+        "name": "Mazda Foundation",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Donor/Grants"
+      }
+    }
+  ]
+}
 
