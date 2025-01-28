@@ -5,6 +5,17 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
+        "coordinates": [175.0217453, -37.21001845]
+      },
+      "properties": {
+        "name": "Soilpro NZ",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "category": "Good Friend"
+      }
+    },{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
         "coordinates": [175.0991339, -41.09363516]
       },
       "properties": {
@@ -295,18 +306,6 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [175.0183659089638, -37.20317658868487]
-      },
-      "properties": {
-        "name": "Soilpro NZ",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "category": "Carbon Farmer"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
         "coordinates": [175.5272418, -39.71918211]
       },
       "properties": {
@@ -319,12 +318,12 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [175.0217453, -37.21001845]
+        "coordinates": [175.0183659089638, -37.20317658868487]
       },
       "properties": {
         "name": "Soilpro NZ",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "category": "Good Friend"
+        "category": "Carbon Farmer"
       }
     },
     {
