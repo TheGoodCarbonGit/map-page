@@ -77,6 +77,14 @@ fetch('https://tong-jt.github.io/map-test/locations.json')
           textColor: 'white',
           backgroundColor: '#eb7c2c'
         };
+      } else if (category === "Store") {
+        iconOptions = {
+          icon: 'store',
+          iconShape: 'marker',
+          borderColor: '#181818',
+          textColor: 'white',
+          backgroundColor: '#181818'
+        };
       } else {
         iconOptions = {
           icon: 'leaf',
@@ -189,7 +197,8 @@ function updateMarkers() {
     if (category === "Good Friend" && document.getElementById('good-friend').checked ||
         category === "Project" && document.getElementById('project').checked ||
         category === "Carbon Farmer" && document.getElementById('carbon-farmer').checked ||
-        category === "Donor" && document.getElementById('donor-grants').checked) {
+        category === "Donor" && document.getElementById('donor-grants').checked ||
+        category === "Store" && document.getElementById('store').checked) {
       markers.addLayer(marker);
     }
   });
