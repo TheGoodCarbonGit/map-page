@@ -7,17 +7,17 @@ var map1 = L.map('map', {
 }).setView([-41.29012931030752, 174.76792012621496], 5);
 
 var markerMap = {};
-  // inistialise lists of markers for clusters
-  var markers = L.markerClusterGroup({
-    showCoverageOnHover: false
-  });
+  // initialise lists of markers for clusters
+var markers = L.markerClusterGroup({
+  showCoverageOnHover: false
+});
 
 L.control.zoom({
   position: 'topright'
 }).addTo(map1);
 
 // Add the tiles (image of the maps)
-var lyr_streets = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+var lyr_streets = L.tileLayer('http://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 });
