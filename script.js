@@ -38,6 +38,7 @@ fetch('https://tong-jt.github.io/map-test/locations.json')
 
     // Parsing through each individual entry and extract info
     data.features.forEach(function(feature) {
+      var id = feature.properties.id;
       var coordinates = feature.geometry.coordinates;
       var title = feature.properties.name;
       var category = feature.properties.category;
@@ -97,6 +98,7 @@ fetch('https://tong-jt.github.io/map-test/locations.json')
 
       // Create the marker object
       var marker = L.marker([coordinates[1], coordinates[0]], {
+        id: id,
         title: title,
         icon: L.BeautifyIcon.icon(iconOptions),
         tags: [category]
@@ -108,7 +110,8 @@ fetch('https://tong-jt.github.io/map-test/locations.json')
 
       markers.addLayer(marker);
 
-      markerMap[title] = {
+      markerMap[id] = {
+        title: title,
         marker: marker,
         category: category,
         properties: feature.properties
@@ -121,7 +124,7 @@ fetch('https://tong-jt.github.io/map-test/locations.json')
   .catch(error => console.error('Error loading GeoJSON:', error));
 
   function showSidebar1(properties) {
-    var marker = markerMap[properties.name].marker;
+    var marker = markerMap[properties.id].marker;
     var latLng = marker.getLatLng();
   
     var offsetLatLng = L.latLng(latLng.lat, latLng.lng - 0.01);
@@ -140,8 +143,8 @@ function handleSearch() {
   if (query !== '') {
     sidebar1.show();
 
-    var matches = Object.keys(markerMap).filter(function(key) {
-      return key.toLowerCase().includes(query);
+    var matches = Object.keys(markerMap).filter(function(id) {
+      return  markerMap[id].title.toLowerCase().includes(query);
     });
 
     if (matches.length > 0) {
