@@ -10,7 +10,13 @@
 }
 
 .filter-buttons {
-    gap: 10px;
+    gap: 45px;
+  width:100%;
+  background-color: #E97B29;
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 120px;
 }
 
 #header-bar {

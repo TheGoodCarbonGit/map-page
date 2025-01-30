@@ -3,13 +3,188 @@
   "name": "Soilpro NZ",
   "coordinates": [175.0183659089638, -37.20317658868487],
   "category": "Good Friend",
-  "description": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "creationDate": "2025-01-27T09:18:45.3664178+00:00"
 }, {
   "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8b6",
   "name": "Birchville Community Garden",
   "coordinates": [175.0991339, -41.09363516],
   "category": "Project",
-  "description": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8b7",
+  "name": "Clyma Community Garden",
+  "coordinates": [175.0593073, -41.12026128],
+  "category": "Project",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8b8",
+  "name": "Mahinga Kai Community Garden",
+  "coordinates": [175.0631667, -41.13278224],
+  "category": "Project",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8b9",
+  "name": "Tawai Park Community Garden",
+  "coordinates": [175.0386096, -41.13619243],
+  "category": "Project",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8ba",
+  "name": "Rimutaka Baptist Church Community Garden",
+  "coordinates": [175.0980639, -41.10405478],
+  "category": "Project",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8bb",
+  "name": "KaiCycle",
+  "coordinates": [174.7796093, -41.30611179],
+  "category": "Project",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8bc",
+  "name": "Fergusson Intermediate School",
+  "coordinates": [175.0377023, -41.12680984],
+  "category": "Project",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8bd",
+  "name": "Tolaga Bay Inn Charitable Trust",
+  "coordinates": [178.2971262, -38.37198794],
+  "category": "Carbon Farmer",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8be",
+  "name": "Southland Carbon",
+  "coordinates": [169.1042446, -46.09648038],
+  "category": "Carbon Farmer",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8bf",
+  "name": "NZ Biochar Limited",
+  "coordinates": [170.3649342, -45.87985017],
+  "category": "Carbon Farmer",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8c0",
+  "name": "The Good Carbon Farm",
+  "coordinates": [175.1120946, -41.05236229],
+  "category": "Carbon Farmer",
+  "description": "The Good Carbon Farm is a New Zealand based not-for-profit making climate impact tangible. We store carbon in community spaces by converting plant waste into biochar.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8c1",
+  "name": "HM.",
+  "coordinates": [144.953634, -37.81654591],
+  "category": "Good Friend",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8c2",
+  "name": "Massey University",
+  "coordinates": [174.7762598, -41.3012596],
+  "category": "Good Friend",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8c3",
+  "name": "Victoria University Wellington",
+  "coordinates": [174.767909, -41.28987811],
+  "category": "Good Friend",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8c4",
+  "name": "Biochar Network New Zealand",
+  "coordinates": [170.3649771, -45.87990993],
+  "category": "Good Friend",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8c5",
+  "name": "Earth Sea Sky",
+  "coordinates": [172.612685, -43.54150382],
+  "category": "Good Friend",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8c6",
+  "name": "EnviroSchools",
+  "coordinates": [170.48609843864622, -45.87680311679697],
+  "category": "Good Friend",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8c7",
+  "name": "Upper Hutt City Council",
+  "coordinates": [175.0675975, -41.12599081],
+  "category": "Donor",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8c8",
+  "name": "Simplicity Foundation",
+  "coordinates": [174.7717867, -36.79042034],
+  "category": "Donor",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8c9",
+  "name": "Oke",
+  "coordinates": [174.8737292, -36.99152574],
+  "category": "Project",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8ca",
+  "name": "Restoring Takarunga Hauraki",
+  "coordinates": [174.7984312, -36.8247882],
+  "category": "Project",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8cb",
+  "name": "Robert Mignault",
+  "coordinates": [174.6189313, -36.83258067],
+  "category": "Carbon Farmer",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8cc",
+  "name": "Gallops Ridge",
+  "coordinates": [175.1237747, -41.00882376],
+  "category": "Carbon Farmer",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8cd",
+  "name": "Slow Farm",
+  "coordinates": [175.5272418, -39.71918211],
+  "category": "Carbon Farmer",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8ce",
+  "name": "Soilpro NZ",
+  "coordinates": [175.0183659089638, -37.20317658868487],
+  "category": "Carbon Farmer",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8cf",
+  "name": "Mazda Foundation",
+  "coordinates": [174.7682371, -36.84679064],
+  "category": "Donor",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "creationDate": "2025-01-27T09:18:45.3664178+00:00"
 }]
