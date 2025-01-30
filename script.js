@@ -32,10 +32,11 @@ var sidebar1 = L.control.sidebar('sidebar', {
 }).addTo(map1);
 
 // Fetch the JSON from local file, parse through
-fetch('https://tong-jt.github.io/map-test/locations.json')
+fetch('https://tong-jt.github.io/map-test/plainlocations.json')
   .then(response => response.json())
-  .then(data => {
-
+  .then(plainjson => { 
+    const data = convertToGeoJson(plainjson)
+    
     // Parsing through each individual entry and extract info
     data.features.forEach(function(feature) {
       var id = feature.properties.id;
@@ -185,6 +186,27 @@ function handleSearch() {
   } else {
     sidebar1.hide();
   }
+}
+
+// Converts plainJSON to a GeoJSON
+function convertToGeoJson(plain){
+    const geoJSON = {
+        type: "FeatureCollection",
+        features: plain.map(site => ({
+            type: "Feature",
+            geometry: {
+                type: "Point",
+                coordinates: site.coordinates
+            },
+            properties: {
+                id: site.id,
+                name: site.name,
+                description: site.description,
+                category: site.category
+            }
+        }))
+    };
+    return geoJSON;
 }
 
 
