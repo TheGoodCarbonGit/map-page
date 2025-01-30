@@ -1,0 +1,15 @@
+[{
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8b5",
+  "name": "Soilpro NZ",
+  "coordinates": [175.0183659089638, -37.20317658868487],
+  "category": "Good Friend",
+  "description": "",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}, {
+  "id": "43a0f7bf-c7b4-49de-bf79-ade19637d8b6",
+  "name": "Birchville Community Garden",
+  "coordinates": [175.0991339, -41.09363516],
+  "category": "Project",
+  "description": "",
+  "creationDate": "2025-01-27T09:18:45.3664178+00:00"
+}]
