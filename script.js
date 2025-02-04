@@ -1,5 +1,10 @@
+var southWest = L.latLng(-41.29012931030752 - 200, 174.76792012621496 - 200);
+var northEast = L.latLng(-41.29012931030752 + 200, 174.76792012621496 + 200);
+var bounds = L.latLngBounds(southWest, northEast);
+
 // Initialise the map
 var map1 = L.map('map', {
+  maxBounds: bounds,
   zoomControl: false,
   scrollWheelZoom: false,
   smoothWheelZoom: true,
