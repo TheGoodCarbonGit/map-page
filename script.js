@@ -244,3 +244,12 @@ function toggleFilters() {
       dropdownContent.style.display = 'block';
   }
 }
+
+var checkboxes = dropdownContent.querySelectorAll('input[type="checkbox"]');
+checkboxes.forEach(checkbox => {
+  checkbox.addEventListener('change', updateMarkers);
+});
+
+document.querySelectorAll('.filter-buttons input').forEach(input => {
+  input.addEventListener('change', updateMarkers);
+});
