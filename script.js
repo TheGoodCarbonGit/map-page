@@ -251,7 +251,3 @@ function toggleFilters() {
       dropdownContent.style.display = 'block';
   }
 }
-
-document.querySelectorAll('.dropdown input[type="checkbox"], .filter-buttons input[type="checkbox"]').forEach(function(checkbox) {
-  checkbox.addEventListener('change', updateMarkers);
-});
