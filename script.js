@@ -226,22 +226,15 @@ function updateMarkers() {
     var marker = markerData.marker;
     var category = markerData.category;
 
-    var isGoodFriendChecked = document.getElementById('good-friend').checked || document.getElementById('dropdown-good-friend').checked;
-    var isProjectChecked = document.getElementById('project').checked || document.getElementById('dropdown-project').checked;
-    var isCarbonFarmerChecked = document.getElementById('carbon-farmer').checked || document.getElementById('dropdown-carbon-farmer').checked;
-    var isDonorChecked = document.getElementById('donor-grants').checked || document.getElementById('dropdown-donor-grants').checked;
-    var isStoreChecked = document.getElementById('store').checked || document.getElementById('dropdown-store').checked;
-
-    if ((category === "Good Friend" && isGoodFriendChecked) ||
-        (category === "Project" && isProjectChecked) ||
-        (category === "Carbon Farmer" && isCarbonFarmerChecked) ||
-        (category === "Donor" && isDonorChecked) ||
-        (category === "Store" && isStoreChecked)) {
+    if (category === "Good Friend" && document.getElementById('good-friend').checked ||
+        category === "Project" && document.getElementById('project').checked ||
+        category === "Carbon Farmer" && document.getElementById('carbon-farmer').checked ||
+        category === "Donor" && document.getElementById('donor-grants').checked ||
+        category === "Store" && document.getElementById('store').checked) {
       markers.addLayer(marker);
     }
   });
 }
-
 
 function toggleFilters() {
   var dropdownContent = document.querySelector('.dropdown-content');
@@ -251,3 +244,25 @@ function toggleFilters() {
       dropdownContent.style.display = 'block';
   }
 }
+
+function syncCheckboxes() {
+  const checkboxes = document.querySelectorAll('#checkboxes input[type="checkbox"]');
+  const dropdownCheckboxes = document.querySelectorAll('.dropdown-content input[type="checkbox"]');
+
+  checkboxes.forEach((checkbox, index) => {
+    dropdownCheckboxes[index].checked = checkbox.checked;
+  });
+
+  dropdownCheckboxes.forEach((checkbox, index) => {
+    checkbox.addEventListener('change', () => {
+      checkboxes[index].checked = checkbox.checked;
+      updateMarkers();
+    });
+  });
+}
+
+window.addEventListener('resize', function() {
+  syncCheckboxes();
+});
+
+syncCheckboxes();
