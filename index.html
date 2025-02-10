@@ -46,30 +46,44 @@
                     <div id="search-results"></div>
                 </div>
                 <div class="filter-buttons">
-                    <label>
-                        <input type="checkbox" id="good-friend" onchange="updateMarkers()" checked>
-                        Good Friend
-                    </label>
-                    <label>
-                        <input type="checkbox" id="project" onchange="updateMarkers()" checked>
-                        Project
-                    </label>
-                    <label>
-                        <input type="checkbox" id="carbon-farmer" onchange="updateMarkers()" checked>
-                        Carbon Farmer
-                    </label>
-                    <label>
-                        <input type="checkbox" id="donor-grants" onchange="updateMarkers()" checked>
-                        Donor
-                    </label>
-                    <label>
-                        <input type="checkbox" id="store" onchange="updateMarkers()" checked>
-                        Store
-                    </label>
+                    <div id="checkboxes">
+                        <label>
+                            <input type="checkbox" id="good-friend" onchange="updateMarkers()" checked>
+                            Good Friend
+                        </label>
+                        <label>
+                            <input type="checkbox" id="project" onchange="updateMarkers()" checked>
+                            Project
+                        </label>
+                        <label>
+                            <input type="checkbox" id="carbon-farmer" onchange="updateMarkers()" checked>
+                            Carbon Farmer
+                        </label>
+                        <label>
+                            <input type="checkbox" id="donor-grants" onchange="updateMarkers()" checked>
+                            Donor
+                        </label>
+                        <label>
+                            <input type="checkbox" id="store" onchange="updateMarkers()" checked>
+                            Store
+                        </label>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="toggleFilters()">Select Categories</button>
+                    <div class="dropdown-content">
+                        <label><input type="checkbox" id="good-friend" onchange="updateMarkers()" checked> Good Friend</label>
+                        <label><input type="checkbox" id="project" onchange="updateMarkers()" checked> Project</label>
+                        <label><input type="checkbox" id="carbon-farmer" onchange="updateMarkers()" checked> Carbon Farmer</label>
+                        <label><input type="checkbox" id="donor-grants" onchange="updateMarkers()" checked> Donor</label>
+                        <label><input type="checkbox" id="store" onchange="updateMarkers()" checked> Store</label>
+                    </div>
                 </div>
             </div>
-            <div class="map" id="map"></div>
-            <div id="sidebar"></div>
+            <div class="map-wrapper">
+                <div class="map" id="map"></div>
+                <div id="sidebar"></div>
+            </div>
         </div>
     </main>
     <script src="script.js"></script>
