@@ -226,15 +226,22 @@ function updateMarkers() {
     var marker = markerData.marker;
     var category = markerData.category;
 
-    if (category === "Good Friend" && document.getElementById('good-friend').checked ||
-        category === "Project" && document.getElementById('project').checked ||
-        category === "Carbon Farmer" && document.getElementById('carbon-farmer').checked ||
-        category === "Donor" && document.getElementById('donor-grants').checked ||
-        category === "Store" && document.getElementById('store').checked) {
+    var isGoodFriendChecked = document.getElementById('good-friend').checked || document.getElementById('dropdown-good-friend').checked;
+    var isProjectChecked = document.getElementById('project').checked || document.getElementById('dropdown-project').checked;
+    var isCarbonFarmerChecked = document.getElementById('carbon-farmer').checked || document.getElementById('dropdown-carbon-farmer').checked;
+    var isDonorChecked = document.getElementById('donor-grants').checked || document.getElementById('dropdown-donor-grants').checked;
+    var isStoreChecked = document.getElementById('store').checked || document.getElementById('dropdown-store').checked;
+
+    if ((category === "Good Friend" && isGoodFriendChecked) ||
+        (category === "Project" && isProjectChecked) ||
+        (category === "Carbon Farmer" && isCarbonFarmerChecked) ||
+        (category === "Donor" && isDonorChecked) ||
+        (category === "Store" && isStoreChecked)) {
       markers.addLayer(marker);
     }
   });
 }
+
 
 function toggleFilters() {
   var dropdownContent = document.querySelector('.dropdown-content');
@@ -245,11 +252,6 @@ function toggleFilters() {
   }
 }
 
-var checkboxes = dropdownContent.querySelectorAll('input[type="checkbox"]');
-checkboxes.forEach(checkbox => {
+document.querySelectorAll('.dropdown input[type="checkbox"], .filter-buttons input[type="checkbox"]').forEach(function(checkbox) {
   checkbox.addEventListener('change', updateMarkers);
-});
-
-document.querySelectorAll('.filter-buttons input').forEach(input => {
-  input.addEventListener('change', updateMarkers);
 });
