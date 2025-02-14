@@ -37,7 +37,7 @@ var sidebar1 = L.control.sidebar('sidebar', {
 }).addTo(map1);
 
 // Fetch the JSON from local file, parse through
-fetch('https://mapdb-victest.australiaeast.cloudapp.azure.com/pins', {
+fetch('https://goodcarbonfarmmap.australiaeast.cloudapp.azure.com/pins', {
   method: "GET",
 })
   .then(response => response.json())
