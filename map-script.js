@@ -86,9 +86,9 @@ fetch('https://goodcarbonfarmmap.australiaeast.cloudapp.azure.com/pins', {
           textColor: 'white',
           backgroundColor: '#eb7c2c'
         };
-      } else if (category === "Store") {
+      } else if (category === "Community") {
         iconOptions = {
-          icon: 'store',
+          icon: 'store', // Store is the original name of the community category so this needs to be kept as store
           iconShape: 'marker',
           borderColor: '#181818',
           textColor: 'white',
@@ -226,11 +226,13 @@ function updateMarkers() {
     var marker = markerData.marker;
     var category = markerData.category;
 
+    // Store is the original name of the community category so this needs to be kept as store for the document element id
+
     if (category === "Good Friend" && document.getElementById('good-friend').checked ||
         category === "Project" && document.getElementById('project').checked ||
         category === "Carbon Farmer" && document.getElementById('carbon-farmer').checked ||
         category === "Donor" && document.getElementById('donor-grants').checked ||
-        category === "Store" && document.getElementById('store').checked) {
+        category === "Community" && document.getElementById('store').checked) {
       markers.addLayer(marker);
     }
   });
